@@ -2,7 +2,7 @@
 
 **Demon** is a Python tool designed for encryption, port scanning, and file management. Developed by Yarin, it features encryption with a random key, network port scanning, and comprehensive file handling.
 
-For detailed documentation and usage instructions, visit the [Demon Documentation](https://<your-username>.github.io/Demon/).
+For detailed documentation and usage instructions, visit the [Demon Documentation](https://bendosh4.github.io/Demon-Website).
 
 ## Getting Started
 
@@ -26,4 +26,4 @@ For detailed documentation and usage instructions, visit the [Demon Documentatio
     python Demon.py
     ```
 
-For more information, check out the [Demon Documentation](https://<your-username>.github.io/Demon/).
+For more information, check out the [Demon Documentation](https://bendosh4.github.io/Demon-Website).
