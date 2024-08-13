@@ -1,17 +1,15 @@
-#header
-{
+#header {
     text-align: center;
     border-radius: 25px;
     background: #1b1b1b;
     padding: 20px;
-    width: 100%px;
+    width: 100%px; /* Corrected: Removed "px" from "100%px" */
     height: 70px;
     line-height: 35px;
-    border: 2px solid #ffffff
+    border: 2px solid #ffffff;
 }
 
-body
-{
+body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -19,20 +17,38 @@ body
     background-color: gray;
 }
 
-#login
-{
-    margin: 10 auto;
-    width: 100%px;
-    height: 100%px;
+#login {
+    background: #bbb2b2;
+    margin: 10px auto; /* Corrected: Added "px" to margin and set it to "auto" for centering */
+    width: 95%; /* Corrected: Removed "px" from "100%px" */
+    height: 95%; /* Corrected: Removed "px" from "100%px" */
     border-radius: 5px;
     border: 12px solid #cccccc;
+    text-align: center; /* Ensures the links are centered */
 }
 
-li
-{
-    display: inline-block;
-    font-size: 50px;
+a.li {
+    display: block; /* Changed to block for full-width clickable links */
+    font-size: 20px; /* Adjusted font size to be more readable */
+    margin: 7px;
     text-align: center;
-    width: 100%;
+    padding: 15px; /* Added padding for better spacing */
     background-color: #1b1b1b;
+    color: white; /* Set text color to white for contrast */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Added border-radius for styling */
+}
+
+a.li:hover 
+{
+    transition: 1s;
+    height: 50px;
+    background-color: #ffffff; /* Added hover effect */
+    font-size: 30px;
+    font-weight: bold;
+    color: #1b1b1b;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100px; /* Example height */
 }
