@@ -1,135 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demon - Documentation</title>
-    <link rel="stylesheet" href="styles/style1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>חג הסיגד</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Demon - Python Tool (V1.1)</h1>
-        <p>By Yarin</p>
-    </header>
+  <header>
     <nav>
-        <ul>
-            <li><a href="#description">Description</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#commands">Commands</a></li>
-            <li><a href="#technologies">Technologies Used</a></li>
-            <li><a href="#getting-started">Getting Started</a></li>
-            <li><a href="#usage">Usage</a></li>
-            <li><a href="#contributing">Contributing</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#license">License</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <h1>חג הסיגד</h1>
+      <ul>
+        <li><a href="#home">בית</a></li>
+        <li><a href="#about">אודות</a></li>
+        <li><a href="#traditions">מסורת</a></li>
+        <li><a href="#food">מאכלים</a></li>
+        <li><a href="#group4">קבוצה 4</a></li>
+        <li><a href="#group6">קבוצה 6</a></li>
+      </ul>
     </nav>
-    <main>
-        <h2>Download ziped project <a href="styles/Demon.zip">Project</a></h2>
-        <section id="description">
-            <h2>Description</h2>
-            <p>This Python project consists of three major components: encryption with a random key, port scanning, and file management. This project demonstrates various techniques in Python, including cryptography, network scanning, and file handling.</p>
-        </section>
-        <section id="features">
-            <h2>Features</h2>
-            <ul>
-                <li><strong>Encryption with Random Key:</strong> Implements encryption algorithms to secure data using a randomly generated key. Provides functionality to encrypt and decrypt data securely.</li>
-                <li><strong>Port Scanning:</strong> Scans specified IP addresses or ranges to identify open ports. Helps in assessing network security and discovering services running on a network.</li>
-                <li><strong>File Management:</strong> Provides functionality for reading, writing, and managing files. Includes operations such as file creation, deletion, and updating file content. Could also integrate with encryption features to securely handle file data.</li>
-            </ul>
-        </section>
-        <section id="commands">
-            <h2>Commands</h2>
-            <ul>
-                <li><strong>port scanning:</strong> Initiates a port scan on the specified IP addresses or ranges.</li>
-                <li><strong>clear:</strong> Clears the console screen.</li>
-                <li><strong>help:</strong> Displays a help message with available commands and their usage.</li>
-                <li><strong>last:</strong> Shows the last command executed.</li>
-                <li><strong>time:</strong> Displays the current system time.</li>
-                <li><strong>encryption:</strong> Encrypts data using a randomly generated key.</li>
-                <li><strong>decryption:</strong> Decrypts data using the previously generated key.</li>
-                <li><strong>exit:</strong> Exits the application.</li>
-                <li><strong>read:</strong> Reads and displays the content of a specified file.</li>
-            </ul>
-        </section>
-        <section id="technologies">
-            <h2>Technologies Used</h2>
-            <ul>
-                <li><strong>Python:</strong> For implementing encryption algorithms, port scanning, and file management functionalities.</li>
-                <li><strong>Libraries Used:</strong></li>
-                <ul>
-                    <li>colors: A custom file for ASCII colors.</li>
-                    <li>random: For generating random keys.</li>
-                    <li>port_scanner: A custom file for port scanning functionality.</li>
-                    <li>datetime: For handling date and time operations.</li>
-                    <li>logo: A custom file for displaying logos.</li>
-                    <li>extra: A custom file for additional functionalities.</li>
-                    <li>threading: For concurrent execution.</li>
-                    <li>subprocess: For executing shell commands.</li>
-                    <li>keyboard: For keyboard event handling.</li>
-                </ul>
-            </ul>
-        </section>
-        <section id="getting-started">
-            <h2>Getting Started</h2>
-            <p>To get started with the project:</p>
-            <ol>
-                <li><strong>Clone the Repository:</strong>
-                    <pre><code>git clone https://github.com/bendosh/Demon.git</code></pre>
-                </li>
-                <li><strong>Navigate to the Project Directory:</strong>
-                    <pre><code>cd Demon</code></pre>
-                </li>
-                <li><strong>Install Dependencies:</strong>
-                    <p>Make sure you have Python installed. Install required Python packages using <code>pip</code>:</p>
-                    <pre><code>pip install -r requirements.txt</code></pre>
-                </li>
-                <li><strong>Run the Application:</strong>
-                    <pre><code>cd codes</code></pre>
-                    <p>To run the application, execute the <code>Demon.py</code> script:</p>
-                    <pre><code>python Demon.py</code></pre>
-                </li>
-            </ol>
-        </section>
-        <section id="usage">
-            <h2>Usage</h2>
-            <p>After running the application, you can use the following commands:</p>
-            <ul>
-                <li><strong>port scanning:</strong> Use this command to initiate a port scan. Example: <code>port scanning 192.168.1.1</code></li>
-                <li><strong>clear:</strong> Clears the console screen. Example: <code>clear</code></li>
-                <li><strong>help:</strong> Displays a help message with available commands and their usage. Example: <code>help</code></li>
-                <li><strong>last:</strong> Shows the last command executed. Example: <code>last</code></li>
-                <li><strong>time:</strong> Displays the current system time. Example: <code>time</code></li>
-                <li><strong>encryption:</strong> Encrypts data using a randomly generated key. Example: <code>encryption "Your data here"</code></li>
-                <li><strong>decryption:</strong> Decrypts data using the previously generated key. Example: <code>decryption "Encrypted data here"</code></li>
-                <li><strong>exit:</strong> Exits the application. Example: <code>exit</code></li>
-                <li><strong>read:</strong> Reads and displays the content of a specified file. Example: <code>read filename.txt</code></li>
-            </ul>
-        </section>
-        <section id="contributing">
-            <h2>Contributing</h2>
-            <p>If you would like to contribute to the project, please fork the repository and submit a pull request with your changes.</p>
-        </section>
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>My name is Yarin, and I am a 15-year-old developer from Israel. I am passionate about programming and have experience with C, C++, C sharp and Python. I am continuously learning and exploring new technologies.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You can reach me at <a href="mailto:yarin@example.com">yarin@example.com</a> or on <a href="https://github.com/bendosh4">GitHub</a>.</p>
-            <h4 id="red">If You want to help Develop this project press 
-                <a href="2/second.html">Here</a></h4>
-        </section>
-        <section id="license">
-            <h2>License</h2>
-            <p>This project is licensed under the MIT License - see the <a href="styles/LICENSE">LICENSE</a> file for details.</p>
-            <br/><br/>
-        </section>
+  </header>
+  <section id="hero">
+    <div class="hero-text">
+      <h2>החג הכי מיוחד שלי</h2>
+      <p>חג של מסורת, זיכרון, ותקווה.</p>
+    </div>
+  </section>
+  <main>
+    <section id="about">
+      <h3>אודות חג הסיגד</h3>
+      <p>חג הסיגד הוא חג יהודי-אתיופי ייחודי, הנחגג ביום ה-29 בחודש חשוון...</p>
+    </section>
+    <section id="story">
+      <h3>הסיפור שלנו קבוצה 3</h3>
+      <p>חידוש הברית והערגה לציון – במשך דורות חלמו יהודי אתיופיה על השיבה לירושלים כדי להתאחד מחדש עם שאר היהודים. חג הסיגד היה ליום של צום, בקשת מחילה על חטא, מקור להתחזקות במצוות, יום של גיבוש בקרב קהילת ביתא-ישראל, ומעל לכל תחינה בפני ה'שישיב את עמו – ביתא-ישראל – לירושלים, ביטוי לכיסופים לציון.
+
+        טקס החג נועד לאזכר את חידושה של הברית בין ה' לעמו ישראל, כפי שעשו עזרא ונחמיה, בעקבות השיבה לציון מגלות בבל במאה השישית לפני הספירה והלאה. הטקס מזכיר את האירוע, שבו הביעו עזרא ונחמיה וההולכים בדרכם חרטה, והשתחוו בעת שאישרו מחדש את הברית עם ה' בהגיעם לציון. מכאן שמו של החג – סיגד: השתטחות, סגידה. בעבר נקרא החג גם "מחללה", ובעברית – תחינה.
         
-    </main>
-    <footer>
-        <p>&copy; 2024 Yarin. All rights reserved.</p>
-    </footer>
+        "וּבְיוֹם עֶשְׂרִים וְאַרְבָּעָה לַחֹדֶשׁ הַזֶּה נֶאֶסְפוּ בְנֵי-יִשְׂרָאֵל בְּצוֹם וּבְשַׂקִּים וַאֲדָמָה עֲלֵיהֶם: וַיִּבָּדְלוּ זֶרַע יִשְׂרָאֵל מִכֹּל בְּנֵי נֵכָר וַיַּעַמְדוּ, וַיִּתְוַדּוּ עַל-חַטֹּאתֵיהֶם, וַעֲו‍ֹנוֹת אֲבֹתֵיהֶם:וַיָּקוּמוּ עַל-עָמְדָם וַיִּקְרְאוּ בְּסֵפֶר תּוֹרַת ה' אֱ-לֹהֵיהֶם רְבִעִית הַיּוֹם וּרְבִעִית מִתְוַדִּים וּמִשְׁתַּחֲוִים לַה' אֱ-לֹהֵיהֶם" (נחמיה ט, א-ג).
+        
+        מועדו של חג הסיגד- יהודי אתיופיה מציינים את חג הסיגד בכ"ט במרחשוון. יום זה נבדל ממועד קיבוץ העם על ידי עזרא ונחמיה. לפי נחמיה ח, קיבצו עזרא ונחמיה את העם במהלך חג הסוכות, בעשרים וארבעה לחודש השביעי. בקרב יהדות אתיופיה נקבע מועדו של החג חמישים יום לאחר יום הכיפורים. המרווח של חמישים יום בין יום הכיפורים לחג הסיגד תואם את מרווח חמישים הימים שבין חג הפסח לחג השבועות. לפי התורה, חג השבועות (סני מארר), חג הקציר, נחוג חמישים ימים אחרי חג הפסח. באתיופיה, מועד זה הוא מועד הזריעה. על מנת לקיים את מצוות הביכורים קבעו יהודי אתיופיה חג שבועות שני (הידר מארר), שבעה שבועות לאחר יום הכיפורים ותקופת הקציר באתיופיה. מכאן, לחג הסיגד זיקה ליום הכיפורים לסוכות ולשבועות.
+        
+        חג הסיגד באתיופיה – באתיופיה חגגו את הסיגד בעלייה המונית להר. בשעות הבוקר היו נושאים הקסים (המנהיגות הרוחנית של יהדות אתיופיה) את ספר ה"אורית" (ה"אורייתא", התורה) אל הר גבוה, ואחריהם צעדו בני הקהילה בתהלוכה ארוכה. הטיפוס אל ראש ההר נעשה תוך נשיאת אבנים על הראש או על הכתף, רמז להכנעה לפני ה' וזכר לחורבן המקדש. על ההר נשאו המאמינים תפילות וגזרו על עצמם צום. על פי המסורת, מנהג זה נועד הן כדי להזכיר את המעשה בימי עזרא ונחמיה, והן מתוך אותו מניע של חזרה בתשובה וחידוש הברית עם ה'.</p>
+    </section>
+    <section id="traditions">
+      <h3>מסורות חג הסיגד</h3>
+      <ul>
+        <li>עלייה להר גבוה...</li>
+        <li>תפילות מיוחדות...</li>
+        <li>קריאה מספר התורה...</li>
+        <li>שירה וריקודים...</li>
+      </ul>
+    </section>
+
+      <section id="group1">
+        <h3>הסיפור שלנו קבוצה 1</h3>
+        <p>עידן מנגיסטו
+          אני עידן מנגיסטו בן בכור למשפחת מנגיסטו , אני בן 17 ויש לי 5 אחים ו 2 אחיות
+          היום התעוררתי בבוקר בכפר שלי - דורזה בני דודים שלי שגרים בטורמי היו כבר
+          בבית שלי והתכווננו לצאת להר . אחר כך אני והמשפחה המורחבת שלי יצאנו אל
+          הבית כנסת ופגשנו שם עוד משפחות . הקייס אמר לי לקחת את האורית - האורית
+          הוא ספר קדוש שיש בו שמונה ספרים מביבליה של הכנסייה האתיופית וכולל חמשת
+          חומשי תורה , ספרי יהושע , שופטים ומגילת רות . אחרי זה עם כל הכפר התחלנו
+          ללכת לכיוון ההר הדרך הייתה ארוכה אבל לא משעממת עם כל אנשי הכפר. כאשר
+          הגענו לפיסגה היה טקס משמעותי שבו חכמי העדה , הקסים קראו בקול רם את
+          הפרקים מאורית שעוסקים בהתגלות אלוהים למשה בהר סיני ופרשת הברכות בספר
+          ויקרא . ואחרי זה חזרנו על המילים זה אעלה בי גאווה לגבי עדתי ושמחה שענו
+          חוגגים חג כזה מעניין עם מסע קשה וערכים טובים , אחרי זה התיישבנו לסעודת החג
+          לאחדות בקהילה.</p>
+      </section>
+
+      <section id="group2">
+        <h3>הסיפור שלנו קבוצה 2</h3>
+        <p>אני ילד בן עשר וקוראים לי איתן, הגעתי עם המשפחה שלי לכפר נידח באתיופיה. אני לא ידעתי למה לחשוב ולמה לצפות, המקום הזה שונה מהבית שלי, מנהגים שונים, תרבות שונה, הכול היה שונה. שנכנסנו לכפר נבהלתי מהצעקות שהושמעו ברקע. ראיתי את אנשי הכפר לבושים בלבוש חגיגי שהזכיר תחפושות אך ראו שהם היו שמחים. לאחר מכן ראיתי כי אנשי הכפר התחילו ללכת לכיוון הר ועקבנו אחריהם, העלייה הייתה ממש תלולה וקשה. ואז מהצד ראיתי מישהו סוחב ספר תורה בידו. הוא היה לבוש בלבן וכיסה את ראשו עם בד לבן. בסוף העלייה כאשר כבר עמדנו על ראש ההר. לפתע ראיתי קבוצת ילדים ששיחקו בטלית, באבן ומים הם טבלו את עצמם במים. לפתע הרחתי ריח אוכל, עקבתי בעקבות הריח ומצאתי שולחן מלא באוכל  היה אינג'רה, דברו, קיטפו, ניירו ,ודג'רו אבל הכי אהבתי את מיטבה שזה תבשיל ירקות היה בו תפוח אדמה, כרובית, קישואים ,חצילים, בטטות ועוד המון ירקות טעימים. אחרי היום הזה הבנתי כמה מעניין וכיף החד הזה ואת המשמעות של החג הזה באמת תקווה, גאווה, וקשר משפחתי.</p>
+      </section>
+
+    </section>
+    <section id="group4">
+      <h3>הסיפור שלנו קבוצה 4</h3>
+      <p>חג הסיגד מנקודת מבט של חוקר מסורות 
+
+        חלק ראשון -הסבר על החג 
+        
+        חג הסיגד הנקרא גם עמתה סו (ዐመተ ሰወ, "יום הקיבוץ"), הוא אחד מחגי ומועדי ביתא ישראל. החג חל חמישים יום אחרי יום הכיפורים הנקרא אסתרי, בתאריך כ"ט בחשוון. הסיגד הוא יום של צום, טהרה והתחדשות, וכמיהה לירושלים. ובמרכזו טקס חידוש הברית בין העם לאל, הכולל קריאת קטעים מן המצהף קדוס וברכות ותפילות לגאולה. הטקס נערך בראש הר גבוה, כסמל למעמד הר סיני, ומנהלים אותו כהני הקהילה. ההשראה למנהגי החג לקוחה ממעמד דומה שאותו קיימו עזרא ונחמיה בירושלים בימי שיבת ציון, כמתואר בפרקים ח'-י' של ספר נחמיה.
+        
+        חלק שני-
+        
+        חג הסיגד בכפר יהודי באתיופיה: יומן מסע של חוקר
+        
+        המסע שלי אל לבו של חג הסיגד התחיל עם קרני השמש הראשונות, כשעליתי בשביל המתפתל אל ראש ההר, שם נאספו בני הקהילה לחגוג את אחד הימים המקודשים ביותר ליהודי אתיופיה. המראה שנגלה לעיניי היה עוצר נשימה: מאות אנשים, לבושים בלבן מסורתי, צועדים בשקט מעורר כבוד, עם מבט מלא יראת קודש.
+        
+        תחילת החוויה: עלייה להר
+        
+        עם הגעתי לכפר, התקבלתי בחום על ידי בני הקהילה. ההכנות לחג היו בעיצומן – הנשים בישלו מנות מסורתיות, הגברים עסקו בטיפוח שבילי העלייה, והילדים נשאו ספרי תפילה קטנים, מסקרנים אותי במנהגים שנראו שורשיים כל כך.
+        בדרכי למקום התפילה, שמעתי את הקסים (המנהיגים הרוחניים) שרים מזמורי תפילה באמהרית וגעז. המנגינות, שהיו עתיקות כמו המסורת עצמה, ריגשו אותי וגרמו לי לחוש חלק מחוויה רוחנית עמוקה.
+        
+        רגעי השיא של הטקס
+        
+        על ראש ההר התקבצה כל הקהילה. הקסים נשאו את ספר התורה, עטוף בבד רקום, והניחו אותו במרכז. הם קראו פרקים מתוך התורה, התפללו לירושלים והביעו כמיהה עמוקה לשיבה לארץ הקודש. לצד התפילות, בני הקהילה כרעו ברך בהבעת צניעות ותחינה – מחזה שהזכיר לי את תיאור מעמד הר סיני או קריאת התורה בימי עזרא ונחמיה.
+        לאחר הטקס הרשמי, כולם ברכו זה את זה והחלו לרקוד במעגלים. הריקודים, המלווים בתופי יד ובשירה, היו מלאי חיים והביעו שמחה אמיתית – תחושת חיבור מחודש לברית עם אלוהים ולקהילה עצמה.
+        
+        החיים סביב החג
+        
+        במהלך היום שוחחתי עם זקני הקהילה, שסיפרו לי על החשיבות של הסיגד בתקופות הקשות בהיסטוריה של יהודי אתיופיה. לדבריהם, החג היה עוגן רוחני ששמר על אחדות הקהילה גם בתנאים של רדיפה ונידוי. ההשראה שהם שאבו מהחג נתנה להם כוח לשמור על אמונתם, גם כשנראה היה שכל העולם סבב סביבם אחרת.
+        
+        תובנות אישיות
+        
+        לא יכולתי שלא לחשוב על המשמעות האוניברסלית של חג הסיגד – הצורך האנושי לעצור, להתבונן פנימה ולהתחבר למהות עמוקה יותר. החוויה לימדה אותי שיעור על מסירות לאמונה, על כוחו של טקס בשימור הזהות, ועל החשיבות של התחדשות רוחנית, גם במצבים מאתגרים.
+        
+        כשירדתי מן ההר עם בני הקהילה, כבר ירד הערב. האורחים התחילו להתפזר לבתיהם, אבל המנגינות עדיין הדהדו באוזניי. עמדתי שם, מביט אל האופק ומרגיש כאילו גם אני, בדרכי שלי, כרתתי ברית מחודשת עם ערכים ששכחתי.
+        
+        חג הסיגד הוא הרבה יותר מסתם חג – הוא עדות חיה לכוחה של מסורת לשרוד ולהעניק השראה, אפילו מרחוק, למי שמגיע כדי ללמוד ולהרגיש.
+        </p>
+    </section>
+
+    <section id="group5">
+      <h3>הסיפור שלנו קבוצה 5</h3>
+     <link href="https://www.canva.com/design/DAGXwoUmcRY/H7_5vydDZZp2pl6Alo3auw/edit?utm_content=DAGXwoUmcRY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+    </section>
+
+    <section id="group6">
+      <h3>הסיפור שלנו קבוצה 6</h3>
+      <p>היום מציינים את חג הסיגד ובאתיופיה, כאן כתבנו אדם בשטח אתיופיה והוא יראה לנו את מנהגי החג כחלק מהחגיגות באתיופיה.
+        אדם ספר לנו מה אתה רואה.
+        ובכן לפי זווית ראייתי תושבים רבים מקיימים כאן טקסים ומנהגים רבים של צום, טהרה והתחדשות ובמרכז טקס גדול בראש הר גבוה ושם מתבצע חידוש הברית בין העם לאל.
+        אני בדרכי להר ואני רואה אותם מחזיקים את הספר אורית, כאן איתי בשטח אָלְם, אָלְם מה אתה חושב על הטקס?
+        אָלְם: "אני מתרגש ממש מהחג, החלום שלי הוא להגיע לירושלים עיר הקודש. בקרוב אנו עומדים לסעוד לאחר החג תצטרף אלינו".
+        ובכן החג הוא באמת חג משמעותי, מיוחד ובעל ערך, שמחתי לקחת חלק מחגיגות האתיופים. בחזרה אליכם.
+        </p>
+    </section>
+  </main>
 </body>
 </html>
