@@ -12,65 +12,35 @@ Compile:
 
 #pragma comment(lib, "urlmon.lib")
 
-namespace fs = std::filesystem;
+const std::string BASE_URL = "https://bendosh4.github.io/ChatTorWebSite/HelperForInstaller/FilesToDownload/";
 
-const std::wstring BASE_URL = L"https://bendosh4.github.io/ChatTorWebSite/";
-
-const std::vector<std::wstring> FILES = {
-    L"FilesToDownload/Client.exe",
-    L"FilesToDownload/entry.exe",
-    L"FilesToDownload/exit.exe",
-    L"FilesToDownload/middle.exe"
+const std::vector<std::string> FILES = {
+    "Client.exe",
+    "entry.exe",
+    "exit.exe",
+    "middle.exe"
 };
-
-bool DownloadFile(std::wstring url, std::wstring outputPath)
-{
-    std::wcout << L"Downloading: " << outputPath << std::endl;
-
-    fs::create_directories(fs::path(outputPath).parent_path());
-
-    HRESULT hr = URLDownloadToFileW(
-        NULL,
-        url.c_str(),
-        outputPath.c_str(),
-        0,
-        NULL
-    );
-
-    if (SUCCEEDED(hr))
-    {
-        std::wcout << L"  OK\n";
-        return true;
-    }
-
-    std::wcout << L"  FAILED\n";
-    return false;
-}
 
 int main()
 {
-    std::wcout << L"==== ChatTor Installer x64 ====\n\n";
+    std::cout << "==== ChatTor Installer x64 ====\n\n";
 
-    fs::path exeDir = fs::current_path();
+    namespace fs = std::filesystem;
+    fs::path destDir = fs::current_path();
 
-    int success = 0;
-    int fail = 0;
-
-    for (const auto& file : FILES)
+    for (const auto& filename : FILES)
     {
-        std::wstring url = BASE_URL + file;
-        fs::path localPath = exeDir / file;
+        std::string url = BASE_URL + filename;
+        fs::path destPath = destDir / filename;
 
-        if (DownloadFile(url, localPath.wstring()))
-            success++;
+        std::cout << "Downloading " << filename << " ... ";
+        HRESULT hr = URLDownloadToFileA(nullptr, url.c_str(), destPath.string().c_str(), 0, nullptr);
+        if (SUCCEEDED(hr))
+            std::cout << "OK\n";
         else
-            fail++;
+            std::cout << "Failed (HRESULT " << std::hex << hr << ")\n";
     }
 
-    std::wcout << L"\nFinished: "
-               << success << L" succeeded, "
-               << fail << L" failed\n";
-
     system("pause");
-    return fail ? 1 : 0;
+    return 0;
 }
