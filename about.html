@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChatTor - Technologies</title>
+    <title>About ChatTor</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -25,13 +25,9 @@
             justify-content: space-between;
             align-items: center;
             padding: 25px 10%;
-            position: fixed;
-            width: 100%;
-            top: 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
             backdrop-filter: blur(12px);
             background: rgba(2, 6, 23, 0.6);
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-            z-index: 1000;
         }
 
         .logo {
@@ -68,27 +64,18 @@
             -webkit-text-fill-color: transparent;
         }
 
-        .tech-card {
-            background: rgba(15, 23, 42, 0.6);
-            padding: 30px;
-            border-radius: 20px;
-            margin-bottom: 30px;
-            border: 1px solid rgba(255,255,255,0.05);
-            transition: 0.3s;
+        .section {
+            margin-bottom: 50px;
         }
 
-        .tech-card:hover {
-            transform: translateY(-5px);
-            border: 1px solid rgba(56, 189, 248, 0.5);
+        .section h2 {
+            margin-bottom: 15px;
+            color: #e2e8f0;
         }
 
-        .tech-card h3 {
-            margin-bottom: 12px;
-        }
-
-        .tech-card p {
+        .section p {
             color: #94a3b8;
-            line-height: 1.6;
+            line-height: 1.8;
         }
 
         footer {
@@ -105,31 +92,45 @@
     <div class="logo">ChatTor</div>
     <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="technologies.html">Technologies</a>
     </nav>
 </header>
 
 <div class="container">
-    <h1>Technologies Used</h1>
+    <h1>About ChatTor</h1>
 
-    <div class="tech-card">
-        <h3>Tor Network</h3>
-        <p>Provides anonymous routing and protects user identity by relaying traffic through multiple encrypted nodes.</p>
+    <div class="section">
+        <h2>General Description</h2>
+        <p>
+            ChatTor is a secure messaging platform that enables users to communicate anonymously using onion encryption technology.
+            Messages are routed through three relay stations to improve privacy while maintaining optimal latency performance.
+        </p>
     </div>
 
-    <div class="tech-card">
-        <h3>C# & XAML</h3>
-        <p>Used to build the modern Windows desktop interface and application logic.</p>
+    <div class="section">
+        <h2>Project Goal</h2>
+        <p>
+            The purpose of ChatTor is to create a communication system that protects user identity and activity from monitoring.
+            The system uses onion encryption where messages pass through three separate relay servers, and each relay encrypts or decrypts a different layer.
+            This project aims to demonstrate secure networking principles while developing a practical privacy-focused communication tool.
+        </p>
     </div>
 
-    <div class="tech-card">
-        <h3>Python Components</h3>
-        <p>Handles networking utilities, backend services, and automation features within ChatTor.</p>
+    <div class="section">
+        <h2>Importance of the Project</h2>
+        <p>
+            In today's digital world, maintaining privacy in communication is becoming increasingly important.
+            ChatTor provides users with a secure environment where conversations remain confidential and protected from data collection.
+            The project also helps explore advanced cryptography, networking concepts, and security protocols.
+        </p>
     </div>
 
-    <div class="tech-card">
-        <h3>End‑to‑End Encryption</h3>
-        <p>Ensures secure communication where only sender and receiver can read messages.</p>
+    <div class="section">
+        <h2>Target Audience</h2>
+        <p>
+            ChatTor is designed for individuals and organizations that require private communication channels.
+            This includes journalists, government institutions, security professionals, and social organizations that need confidential internal messaging without centralized monitoring.
+        </p>
     </div>
 </div>
 
